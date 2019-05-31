@@ -13,7 +13,7 @@ namespace Tests.NHibernate.Spatial
             IDictionary<string, string> properties = new Dictionary<string, string>
             {
                 [Environment.ProxyFactoryFactoryClass] = typeof(StaticProxyFactoryFactory).AssemblyQualifiedName,
-                [Environment.Dialect] = typeof(MsSql2012GeometryDialect).AssemblyQualifiedName,
+                [Environment.Dialect] = typeof(MsSql2008GeometryDialect).AssemblyQualifiedName,
                 [Environment.ConnectionProvider] = typeof(DebugConnectionProvider).AssemblyQualifiedName,
                 [Environment.ConnectionDriver] = typeof(SqlClientDriver).AssemblyQualifiedName,
                 [Environment.ConnectionString] = System.Configuration.ConfigurationManager.ConnectionStrings["SqlServer2012"].ConnectionString
